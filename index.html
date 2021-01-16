@@ -34,13 +34,14 @@
                                 <div class="d-flex justify-content-between">                                
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-dollar-sign"></i> </span>
-                                   </div>
+                                    </div>
                                     <input type="number" class="form-control" name="inputAmount" placeholder="Amount" step="0.01" min="0" required="">
-                             </div>
+                                </div>
+                            </div>
                                 
                             </div>
                         </div>
-                        <div class="row d-flex justify-content-between">
+                        <div class="row d-flex justify-content-between p-3">
                             <div class="form-group col-6 font-weight-bold">
                                 <label for="inputFirstName"> First Name</label>
                                 <input type="text" class="form-control" name="inputFirstName" requiered>
@@ -50,7 +51,7 @@
                                 <input type="text" class="form-control" name="inputLastName" required>
                             </div>
                         </div> 
-                        <div class="row d-flex justify-content-between">   
+                        <div class="row d-flex justify-content-between p-3">   
                              <div class="form-group col-md-6 font-weight-bold">
                                 <label for="inputCity">City</label>
                                 <input type="text" class="form-control" name="inputCity" pattern="[a-zA-Z ]{2,15}" required>  
@@ -224,7 +225,7 @@
                                 <input type="text" class="form-control" id="inputPostalCode" maxlength="5" size="5" minlength="5" pattern="[0-9]">
                             </div>
                         </div>
-                       <div class="form-row">
+                       <div class="form-row p-3">
                             <div class="col-3">
                                 <label for="cards" class="d-block font-weight-bold">We accept:</label>
                                 <div class="bg-secondary rounded p-2"> 
@@ -244,6 +245,10 @@
                                         <input class="form-check-input" type="radio" name="cards" id="card4" value="option4">
                                         <label class="form-check-label" for="card4"><i class="fab fa-cc-amex text-white"></i></label>
                                     </div> 
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="cards" id="card4" value="option4">
+                                        <label class="form-check-label" for="card4"><i class="fab fa-cc-paypal text-white"></i></label>
+                                    </div> 
                                 </div>    
                             </div>
                             <div class="col-6 mb-3 offset-3">
@@ -252,13 +257,14 @@
                                 <p class="small text-muted">Add any note here.</p>
                             </div>    
                         </div>
-                </div>        
-                <div class="card-footer bg-light row d-flex justify-content-end">
-                    <div class="form-group">
-                        <button type="reset" class="btn btn-secondary">Cancel</button>
-                        <button type="submit" class="btn btn-primary">Send</button>
-                     </div>
-                </div>        
+                        <div class="card-footer bg-light row d-flex justify-content-end">
+                            <div class="form-group">
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
             </form>
         </div>
     </div>
